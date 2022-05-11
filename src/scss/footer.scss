@@ -1,0 +1,34 @@
+.footer {
+    text-align: center;
+    padding: 50px 0;
+    &__content{}
+    &__social{
+        margin-bottom: 25px;
+    }
+    &__copy{}
+}
+//================================================================================================================
+.social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &__item{
+        height: 30px;
+        margin: 0 17px;
+        @media(min-width: ($md2+px)) {
+            & svg #insta,
+            & svg #fb,
+            & svg #twitter,
+            & svg #linkedin {
+                transition: fill 0.3s ease 0s;
+            }
+
+            & svg:hover #insta,
+            & svg:hover #fb,
+            & svg:hover #twitter,
+            & svg:hover #linkedin {
+                fill: #ff6464;
+            }
+        }
+    }
+}
